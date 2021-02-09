@@ -25,9 +25,6 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-    - name: Install SeleniumPy
-      run: |
-        python setup.py install
     - name: Lint with flake8
       run: |
         pip install flake8
@@ -43,4 +40,4 @@ jobs:
         seleniumpy install geckodriver
     - name: Run pytest login.py --browser=chrome --headless
       run: |
-        pytest Python/python/Login.py --browser=chrome --headless -v -s --junit-xml=junit/test-results.xml
+        pytest printvariable.py --browser=chrome --headless -v -s --junit-xml=junit/test-results.xml
