@@ -36,4 +36,4 @@ jobs:
         sudo apt-get install firefox
     - name: Run pytest printvariable --browser=chrome --headless
       run: |
-        pytest printvariable.py
+        pytest printvariable.py -v -s --junit-xml=junit/test-results.xml
