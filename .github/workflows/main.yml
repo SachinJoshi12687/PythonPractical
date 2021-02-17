@@ -34,6 +34,6 @@ jobs:
       run: |
         sudo apt install google-chrome-stable
         sudo apt-get install firefox
-    - name: Run pytest login.py --browser=chrome --headless
+    - name: Run pytest printvariable --browser=chrome --headless
       run: |
-        pytest printvariable.py --browser=chrome --headless -v -s --junit-xml=junit/test-results.xml
+        pytest printvariable.py -v -s --junit-xml=junit/test-results.xml
