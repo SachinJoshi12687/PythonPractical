@@ -1,2 +1,5 @@
-i = j = 32
-print(i)
+def test():
+    print("Hello")
+    
+
+test()
