@@ -4,6 +4,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 
 class mytest():
+  
+  
   def testbasic(self):
     driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.implicitly_wait(5)
