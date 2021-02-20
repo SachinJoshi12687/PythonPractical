@@ -5,7 +5,7 @@ import time
 
 
 class mytest():
-
+    
     def testbasic(self):
     
         driver = webdriver.Chrome(ChromeDriverManager().install())
