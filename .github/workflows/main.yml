@@ -38,4 +38,4 @@ jobs:
         sudo apt-get install firefox
     - name: Run pytest printvariable --browser=chrome --headless
       run: |
-        pytest WebDriverManager_Sample.py --headless -v -s --junit-xml=junit/test-results.xml
+        pytest WebDriverManager_Sample.py --browser=chrome --headless -v -s --junit-xml=junit/test-results.xml
