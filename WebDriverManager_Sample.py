@@ -13,4 +13,5 @@ class mytest():
         driver.get("https://www.amazon.in/")
         print(driver.title)
         time.sleep(5)
+        print("hello this is pass")
         driver.quit()
