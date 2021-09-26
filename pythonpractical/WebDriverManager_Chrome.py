@@ -10,7 +10,7 @@ class mytest(unittest.TestCase):
     def testbasic(self):
 
         self = webdriver.Chrome(ChromeDriverManager().install())
-        self.implicitly_wait(5)
+        self.implicitly_wait(6)
         self.get("https://store.xkcd.com/search")
         print(self.title)
         time.sleep(5)
