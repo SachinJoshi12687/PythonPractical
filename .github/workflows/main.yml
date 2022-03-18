@@ -36,6 +36,6 @@ jobs:
         pip install flake8
         # Stop the build if there are flake8 issues
         flake8 . --count --show-source --statistics --exclude=temp
-    - name: Run pytest printvariable --browser=chrome --headless
+    - name: Run pytest printvariable --browser=chrome --headless --no-cache
       run: |
         pytest WebDriverManager_Sample.py -v -s --junit-xml=junit/test-results.xml
