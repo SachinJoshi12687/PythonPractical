@@ -24,12 +24,14 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install Chrome and Firefox
       run: |
-        sudo apt install '/usr/bin/google-chrome-stable'
+        sudo apt install google-chrome-stable
+        sudo chmod -x "/usr/bin/google-chrome"
         sudo apt-get install firefox
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        python -m pip install '/usr/bin/webdriver_manager'
+        python -m pip install webdriver_manager
+        sudo chmod -x "/usr/bin/webdriver_manager"
         pip install -r requirements.txt
     - name: Lint with flake8
       run: |
