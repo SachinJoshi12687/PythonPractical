@@ -1,5 +1,5 @@
 from selenium import webdriver
-from webdriver-manager.chrome import ChromeDriverManager
+from webdriver_manager.chrome import ChromeDriverManager
 
 import time
 import unittest
