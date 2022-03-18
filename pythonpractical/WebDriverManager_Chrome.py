@@ -16,7 +16,7 @@ class mytest(unittest.TestCase):
         time.sleep(5)
         self.find_element_by_id('q').send_keys('xkcd book')
 
-        time.sleep(3)
+        time.sleep(5)
         self.find_element_by_id('q').submit()
         time.sleep(5)
         self.quit()
