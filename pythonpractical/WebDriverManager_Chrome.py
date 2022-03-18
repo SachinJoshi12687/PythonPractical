@@ -1,5 +1,7 @@
+import pytest
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
+@pytest.fixture(scope="session")
 
 import time
 import unittest
