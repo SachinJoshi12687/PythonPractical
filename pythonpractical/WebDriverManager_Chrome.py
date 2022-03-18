@@ -1,14 +1,15 @@
-import pytest
+
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
-@pytest.fixture(scope="session")
 
+
+import pytest
 import time
 import unittest
 
 
 class mytest(unittest.TestCase):
-
+    @pytest.fixture(scope="session")
     def testbasic(self):
 
         self = webdriver.Chrome(ChromeDriverManager().install())
