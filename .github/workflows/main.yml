@@ -31,7 +31,6 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         python -m pip install webdriver_manager
-        sudo chmod -x "/usr/bin/webdriver_manager"
         pip install -r requirements.txt
     - name: Lint with flake8
       run: |
