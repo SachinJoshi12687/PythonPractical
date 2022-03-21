@@ -24,8 +24,10 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install Chrome and Firefox
       run: |
-        sudo apt install google-chrome-stable
-        sudo chmod -x "/usr/bin/google-chrome"
+        # sudo apt install google-chrome-stable
+        # sudo chmod -x "/usr/bin/google-chrome"
+        sudo apt-get install chromium-browser
+        chromium --version
         sudo apt-get install firefox
     - name: Install dependencies
       run: |
